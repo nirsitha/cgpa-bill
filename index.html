@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>cgpa</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="row bg-dark " id="">
+      <!-- <div class="col-md-2 ml-5 mt-2">
+        
+      </div> -->
+      <div class="col-md-12 ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+      
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" id="">
+              <li class="nav-item active">
+                <a class="nav-link text-white  "  href="./index.html"><b>CGPA CALCULATOR</b><span><i class="material-icons " style="color: rgb(241, 233, 233);">school</i></span> </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link ml-5 text-white" href="./index1.html"><b>BILL CALCULATOR</b><span><i class="material-icons " style="color: rgb(241, 233, 233);" >emoji_objects</i></span> </a>
+              </li>
+              
+             
+              <li class="nav-item active">
+                <a class="nav-link ml-5 text-white" href="./index2.html"><b>METER CONVERSION</b><span><i class="material-icons " style="color: rgb(241, 233, 233);" >change_circle</i></span> </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="#"><b>METER CONVERSION</b></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark " href="#"><b>METER CONVERSION</b></a>
+              </li>
+              
+              
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+   
+    <!-- <div class="row bg-dark"  id="aa" >
+        <div class="col-md-4 ">
+           
+        </div>
+        <div class="col-md-5 mt-2 "> 
+          <h3 class="font-weight-bold  text-center  text-white " style="font-family: 'Times New Roman', Times, serif;">CGPA CALCULATION  <img src="./image/graduation.png" alt="" class=" " width="150"><h1></h1></p> </h3>
+         
+          
+        </div>
+        <div class="col-md-5"> 
+            
+        </div>
+    </div> -->
+    <div class="row mt-2" id="a3">
+       <div  class="col-md-5">
+
+       </div>
+       <div class="col-md-11">
+
+       </div>
+     <div class="row col-md-11 ml-5  mt-4 mb-4" id="rr">
+            <div class="col-md-5">
+
+            </div>
+            <div class="col-md-11" >
+              <h5 class="font-weight-bold  text-center text-white p-3 ml-5 " style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> CGPA CALCULATION <img src="./image/graduation.png" alt="" width="10%"></h5>
+            </div>
+            <!-- <div class=""> -->
+              <div class="col-md-6 ">
+            
+                <p class="  ml-5 text-white text-center font-weight-bold" >ROLL NO:</p>
+              </div>
+              <div class="col-md-4">
+                  <form action="">
+                      <div class="">
+                        <input type="" class=" form-control form-control-sm "  id="get1" placeholder="">
+                      </div>
+                    </form>
+            </div>
+           
+            
+            <div class="col-md-6">
+              <p class=" ml-5 mt-3 text-center text-white font-weight-bold" >SEMESTER</p>
+            </div>
+            <div class="col-md-4">
+              <form action="">
+                  <div class="form-group">
+                      <select name="course" id="course" class="form-control form-control-sm"  style="float: left;"
+                       onchange="sem()" required>
+                          <option value="">Choose the semester to get your CGPA</option>
+                          <option value="1"> 1st sem</option>
+                          <option value="2"> 2nd sem</option>
+                          <option value="3"> 3rd sem</option>
+                          <option value="4"> 4th sem</option>
+                          <option value="5"> 5th sem</option>
+                          <option value="6"> 6th sem</option>
+                          <option value="7"> 7th sem</option>
+                          <option value="8"> 8th sem</option>
+                      </select>
+                  </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s1">
+              <p class="ml-5 text-center text-white font-weight-bold"> 1st SEM GPA</p>
+            </div>
+            <div class="col-md-3" id="s11" >
+              <form action="">
+                <div class="">
+                  <input type="" class="form-control form-control-sm" id="s111" value="" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s2">
+              <p class="ml-5 text-center text-white font-weight-bold">2nd SEM GPA </p>
+            </div>
+            <div class="col-md-3" id="s22">
+              <form action="">
+                <div class="">
+                  <input type="" class=" form-control form-control-sm"value="" id="s222" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s3">
+              <p class="ml-5 text-center text-white font-weight-bold">3rd SEM GPA</p>
+            </div>
+            <div class="col-md-3" id="s33">
+              <form action="">
+                <div class="">
+                  <input type="" class=" form-control form-control-sm" value="" id="s333" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s4">
+              <p class="ml-5 text-center text-white font-weight-bold">4th SEM GPA</p>
+            </div>
+            <div class="col-md-3" id="s44">
+              <form action="">
+                <div class="">
+                  <input type="" class=" form-control form-control-sm" value="" id="s444" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s5">
+              <p class="ml-5 text-center text-white font-weight-bold">5th SEM GPA</p>
+            </div>
+            <div class="col-md-3" id="s55">
+              <form action="">
+                <div class="">
+                  <input type="" class="form-control form-control-sm" value="" id="s555" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s6">
+              <p class="ml-5 text-center text-white font-weight-bold">6th SEM GPA </p>
+            </div>
+            <div class="col-md-3" id="s66">
+              <form action="">
+                <div class="">
+                  <input type="" class=" form-control form-control-sm" value="" id="s666" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s7">
+              <p class="ml-5 text-center text-white font-weight-bold">7th SEM GPA </p>
+            </div>
+            <div class="col-md-3"id="s77" >
+              <form action="">
+                <div class="">
+                  <input type="" class=" form-control form-control-sm" value="" id="s777" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-6" id="s8">
+              <p class="ml-5 text-center text-white font-weight-bold">8th SEM GPA </p>
+            </div>
+            <div class="col-md-3" id="s88">
+              <form action="">
+                <div class="">
+                  <input type="" class=" form-control form-control-sm mb-3"value="" id="s888" placeholder="">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5">
+  
+            </div>
+            <div class="col-md-4">
+              <button type="button" class="btn btn-dark rounded rounded-pill mt-2 " onclick="calc()">CALCULATE THE CGPA</button>
+  
+            </div>
+            <div class="col-md-6">
+              <p class="ml-5 text-center text-white font-weight-bold mt-3"  >YOUR CGPA  IS </p>
+            </div>
+            <div class="col-md-4">
+              <form action="">
+                <div class="">
+                  <input type="" class="mt-3 form-control form-control-sm mb-3" id="ans" placeholder="">
+                </div>
+              </form>
+            </div>
+            <!-- <div class="col-md-6 ">
+              <p class=" ml-5 mt-3 text-center text-white font-weight-bold" >SEMESTER</p>
+            </div>
+              <div class="col-md-4">
+                <form action="">
+                    <div class="form-group">
+                        <select name="course" id="coal" class="form-control form-control-sm"  style="float: left;"
+                         onchange="gpasem()" required>
+                            <option value="">Enter your marks to get your GPA</option>
+                            <option value="1">1st sem</option>
+                            <option value="2"> 2nd sem</option>
+                            <option value="3"> 3rd sem</option>
+                            <option value="4">4th sem</option>
+                            <option value="5">5th sem</option>
+                            <option value="6">6th sem</option>
+                            <option value="7"> 7th sem</option>
+                            <option value="8"> 8th sem</option>
+                        </select>
+                    </div>
+                </form>
+              </div> -->
+              <!-- <div class="col-md-6 ">
+                <p class=" ml-5 mt-3 text-center text-white font-weight-bold" >SUBJECT COUNT</p>
+              </div>
+                <div class="col-md-4 ">
+                  <form action="">
+                      <div class="form-group">
+                          <select name="course" id="coal" class="form-control form-control-sm"  style="float: left;"
+                           onchange="sub()" required>
+                              <option value="">Choose subjects</option>
+                              <option value="1">1</option>
+                              <option value="2">2 </option>
+                              <option value="3"> 3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              
+                          </select>
+                      </div>
+                  </form>
+                </div>
+                <div class="col-md-6" id="x1">
+                   <p class=" ml-5 mt-3 text-center text-white font-weight-bold" id="y1" >SUB 1</p>
+                </div>
+                <div class="form-group col-md-1 mt-3">
+                    <select id="z1" class="form-control form-control-sm" onchange="gpa1()">
+                      <option selected>Choose your grade</option>
+                      <option value="1">O</option>
+                      <option value="2">A+</option>
+                      <option value="3">A</option>
+                      <option value="4">B+</option>
+                      <option value="5">B</option>
+                    </select>
+                </div> <br>
+                <div class="col-md-6" id="x1=2">
+                  <p class=" ml-5 mt-2 text-center text-white font-weight-bold" id="y2" >SUB 2</p>
+               </div>
+               <div class="form-group col-md-1 mt-2">
+                   <select id="z2" class="form-control form-control-sm" onchange="gpa1()">
+                     <option selected>Choose your grade</option>
+                     <option value="1">O</option>
+                     <option value="2">A+</option>
+                     <option value="3">A</option>
+                     <option value="4">B+</option>
+                     <option value="5">B</option>
+                   </select>
+               </div> <br>
+               <div class="col-md-6" id="x3">
+                <p class=" ml-5 mt-2 text-center text-white font-weight-bold" id="y3">SUB 3</p>
+             </div>
+             <div class="form-group col-md-1 mt-2">
+                 <select id="z3" class="form-control form-control-sm" onchange="gpa1()">
+                   <option selected>Choose your grade</option>
+                   <option value="1">O</option>
+                   <option value="2">A+</option>
+                   <option value="3">A</option>
+                   <option value="4">B+</option>
+                   <option value="5">B</option>
+                 </select>
+             </div> <br>
+             <div class="col-md-6" id="x4">
+              <p class=" ml-5 mt-2 text-center text-white font-weight-bold" id="y4">SUB 4</p>
+           </div>
+           <div class="form-group col-md-1 mt-2">
+               <select id="z4" class="form-control form-control-sm" onchange="gpa1()">
+                 <option selected>Choose your grade</option>
+                 <option value="1">O</option>
+                 <option value="2">A+</option>
+                 <option value="3">A</option>
+                 <option value="4">B+</option>
+                 <option value="5">B</option>
+               </select>
+           </div> <br>
+           <div class="col-md-6" id="x5">
+            <p class=" ml-5 mt-2 text-center text-white font-weight-bold" id="y5" >SUB 5</p>
+         </div>
+         <div class="form-group col-md-1 mt-2">
+             <select id="z5" class="form-control form-control-sm" onchange="gpa1()">
+               <option selected>Choose your grade</option>
+               <option value="1">O</option>
+               <option value="2">A+</option>
+               <option value="3">A</option>
+               <option value="4">B+</option>
+               <option value="5">B</option>
+             </select>
+         </div> <br>
+         <div class="col-md-6" id="x6">
+          <p class=" ml-5 mt-2 text-center text-white font-weight-bold" id="y6" >SUB 6</p>
+        </div>
+       <div class="form-group col-md-1 mt-2" id="">
+           <select id="z6" class="form-control form-control-sm" onchange="gpa1()">
+             <option selected>Choose your grade</option>
+             <option value="1">O</option>
+             <option value="2">A+</option>
+             <option value="3">A</option>
+             <option value="4">B+</option>
+             <option value="5">B</option>
+           </select>
+       </div>  <br>
+       
+      -->
+
+            </div>
+            
+     </div>
+     </div>
+     <!-- <div class="row mt-4 mr-5 "> -->
+      <!-- <div class="col-md-1 text-center p-2 ml-4 border border-light rounded rounded-pill mb-5 " id="a5">
+        <a href="" class="">Previouspage</a>
+      </div> -->
+      
+    <script>
+      var o= window.onload=function()
+      {
+        document.getElementById("s1").style.display = "none";
+        document.getElementById("s11").style.display = "none";
+        document.getElementById("s2").style.display = "none";
+        document.getElementById("s22").style.display = "none";
+        document.getElementById("s3").style.display = "none";
+        document.getElementById("s33").style.display = "none";
+        document.getElementById("s4").style.display = "none";
+        document.getElementById("s44").style.display = "none";
+        document.getElementById("s5").style.display = "none";
+        document.getElementById("s55").style.display = "none";
+        document.getElementById("s6").style.display = "none";
+        document.getElementById("s66").style.display = "none";
+        document.getElementById("s7").style.display = "none";
+        document.getElementById("s77").style.display = "none";
+        document.getElementById("s8").style.display = "none";
+        document.getElementById("s88").style.display = "none";
+        // document.getElementById("y1").style.display = "none";
+        // document.getElementById("z1").style.display = "none";
+        // document.getElementById("y2").style.display = "none";
+        // document.getElementById("z2").style.display = "none";
+        // document.getElementById("y3").style.display = "none";
+        // document.getElementById("z3").style.display = "none";
+        // document.getElementById("y4").style.display = "none";
+        // document.getElementById("z4").style.display = "none";
+        // document.getElementById("y5").style.display = "none";
+        // document.getElementById("z5").style.display = "none";
+        // document.getElementById("y6").style.display = "none";
+        // document.getElementById("z6").style.display = "none";
+        
+      }
+      function sem()
+      {
+        o();
+        var t=document.getElementById("course").selectedIndex;
+       if(t==1){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+       }
+       else if(t==2){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+       }
+       else if(t==3){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+        document.getElementById("s3").style.display = "inline";
+        document.getElementById("s33").style.display = "inline";
+       }
+       else if(t==4){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+        document.getElementById("s3").style.display = "inline";
+        document.getElementById("s33").style.display = "inline";
+        document.getElementById("s4").style.display = "inline";
+        document.getElementById("s44").style.display = "inline";
+       }
+       else if(t==5){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+        document.getElementById("s3").style.display = "inline";
+        document.getElementById("s33").style.display = "inline";
+        document.getElementById("s4").style.display = "inline";
+        document.getElementById("s44").style.display = "inline";
+        document.getElementById("s5").style.display = "inline";
+        document.getElementById("s55").style.display = "inline";
+
+       }
+       else if(t==6){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+        document.getElementById("s3").style.display = "inline";
+        document.getElementById("s33").style.display = "inline";
+        document.getElementById("s4").style.display = "inline";
+        document.getElementById("s44").style.display = "inline";
+        document.getElementById("s5").style.display = "inline";
+        document.getElementById("s55").style.display = "inline";
+        document.getElementById("s6").style.display = "inline";
+        document.getElementById("s66").style.display = "inline";
+
+       }
+       else if(t==7){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+        document.getElementById("s3").style.display = "inline";
+        document.getElementById("s33").style.display = "inline";
+        document.getElementById("s4").style.display = "inline";
+        document.getElementById("s44").style.display = "inline";
+        document.getElementById("s5").style.display = "inline";
+        document.getElementById("s55").style.display = "inline";
+        document.getElementById("s6").style.display = "inline";
+        document.getElementById("s66").style.display = "inline";
+        document.getElementById("s7").style.display = "inline";
+        document.getElementById("s77").style.display = "inline";
+       }
+       else if(t==8){
+        document.getElementById("s1").style.display = "inline";
+        document.getElementById("s11").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+        document.getElementById("s2").style.display = "inline";
+        document.getElementById("s22").style.display = "inline";
+        document.getElementById("s3").style.display = "inline";
+        document.getElementById("s33").style.display = "inline";
+        document.getElementById("s4").style.display = "inline";
+        document.getElementById("s44").style.display = "inline";
+        document.getElementById("s5").style.display = "inline";
+        document.getElementById("s55").style.display = "inline";
+        document.getElementById("s6").style.display = "inline";
+        document.getElementById("s66").style.display = "inline";
+        document.getElementById("s7").style.display = "inline";
+        document.getElementById("s77").style.display = "inline";
+        document.getElementById("s8").style.display = "inline";
+        document.getElementById("s88").style.display = "inline";
+       }
+       
+      }
+      function calc(){
+        document.getElementById("ans").value=0;
+        var t=document.getElementById("course").selectedIndex;
+        var c=0;
+        var a=0;
+        var y1=parseInt(document.getElementById("s111").value);
+        var y2=parseInt(document.getElementById("s222").value);
+        var y3=parseInt(document.getElementById("s333").value);
+        var y4=parseInt(document.getElementById("s444").value);
+        var y5=parseInt(document.getElementById("s555").value);
+        var y6=parseInt(document.getElementById("s666").value);
+        var y7=parseInt(document.getElementById("s777").value);
+        var y8=parseInt(document.getElementById("s888").value);
+        
+        if(c<t){
+          c=c+1;
+          if((y1!=0)&& (c<t))
+          {
+            c=c+1;
+            if((y2!=0)&&(c<t)){
+              c=c+1;
+              if((y3!=0)&&(c<t)){
+                c=c+1;
+               if((y4!=0)&&(c<t)){
+                c=c+1;
+               if((y5!=0)&&(c<t)){
+                c=c+1;
+               if((y6!=0)&&(c<t)){
+                c=c+1;
+               if((y7!=0)&&(c<t)){
+                c=c+1;
+               if((y8!=0)&&(c<t)){
+              } 
+              else if((y8!=0)&& (c==t))
+              {
+                document.getElementById("ans").value=(y1+y2+y3+y4+y5+y6+y7+y8)/8;
+              }
+            else
+            {
+              window.alert("8th Semester not entered");
+            }
+                
+          } 
+          else if((y7!=0)&& (c==t))
+          {
+            document.getElementById("ans").value=(y1+y2+y3+y4+y5+y6+y7)/7;
+          }
+            else{
+            window.alert("7th Semester not entered");
+          }
+          }  
+              else if((y6!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3+y4+y5+y6)/6;
+            }
+            else{
+            window.alert("6th Semester not entered");
+          }
+              } 
+              else if((y5!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3+y4+y5)/5;
+            }
+            else{
+            window.alert("5th Semester not entered");
+          }
+              } 
+              else if((y4!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3+y4)/4;
+            }
+            else{
+            window.alert("4th Semester not entered");
+          }
+              }  
+              else if((y3!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3)/3;
+            }
+            else{
+            window.alert("3rd Semester not entered");
+          }
+            }
+            else if((y2!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2)/2;
+            }
+          else{
+            window.alert("2nd Semester not entered");
+          }
+          }
+          else if((y1!=0)&& (c==t)){
+            document.getElementById("ans").value=y1;
+          }
+          else{
+            // window.alert("1st Semester not entered");
+          }
+          }
+        else{
+          // window.alert("Semester not choosen");
+        }
+      }
+     
+    </script>
+  </body>
+
+</html>
